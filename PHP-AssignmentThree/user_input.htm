@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    Ryan Siegel
+	09/15/2021
+	Purpose: This script hosts the html to collect the users information via inputs.
+  -->
+	<title>User Input</title>
+	<!-- link css -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- javascript to clear, wanted to mention there wasn't anything saying on how the reset needed to be done so did it this way. If there is another way, please let me know.-->
+	<script type="text/javascript">
+	function Reset() {
+		document.getElementById("first_name").value="";
+		document.getElementById("last_name").value="";
+		document.getElementById("email_address").value="";
+		document.getElementById("tele_num").value="";
+		document.getElementById("address").value="";
+		document.getElementById("city").value="";
+		document.getElementById("state").value="";
+		document.getElementById("zip").value="";
+	}
+	</script>
+</head>
+
+<body>
+	<!-- create user input table -->
+	<table>
+		<!-- perform php post method -->
+		<tr>
+			<th colspan = "2">Please enter user informaton</th>
+		</tr>
+		<!-- perform php post method -->
+		<form action="http://localhost/display_user_info.php" method="POST">
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" id="first_name" name="firstname" /></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" id="last_name" name="lastname" /></td>
+		</tr>
+		<tr>
+			<td>E-Mail Address:</td>
+			<td><input type="text" id="email_address" name="emailaddress" /></td>
+		</tr>
+		<tr>
+			<td>Telephone #:</td>
+			<td><input type="text" id="tele_num" name="telephonenum" /></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td><input type="text" id="address" name="address" /></td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td><input type="text" id="city" name="city" /></td>
+		</tr>
+		<tr>
+			<td>State:</td>
+			<td><input type="text" id="state" name="state" /></td>
+		</tr>
+		<tr>
+			<td>Zip:</td>
+			<td><input type="text" id="zip" name="zip" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="Reset" onClick="Reset()"/></td>
+			<td><input type="submit" value="Submit"></td>
+		</tr>
+		</form>
+	</table>
+</body>
+</html>
