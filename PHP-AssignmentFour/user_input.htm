@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    Ryan Siegel
+	09/29/2021
+	Purpose:
+  -->
+	<title>User Input</title>
+	<!-- javascript to clear-->
+	<script type="text/javascript">
+	function Reset() {
+		document.getElementById("first_name").value="";
+		document.getElementById("last_name").value="";
+		document.getElementById("hours_worked").value="";
+		document.getElementById("hour_rate").value="";
+	}
+	</script>
+</head>
+
+<body>
+	<h2>Please enter employee info</h2>
+	<table>
+		<!-- perform php post method -->
+		<form action="http://localhost/display_paycheck.php" method="POST">
+		<tr>
+			<td>First Name:</td>
+			<td><input type="text" id="first_name" name="firstname" /></td>
+		</tr>
+		<tr>
+			<td>Last Name:</td>
+			<td><input type="text" id="last_name" name="lastname" /></td>
+		</tr>
+		<tr>
+			<td>Weekly Hours Worked:</td>
+			<td><input type="number" id="hours_worked" name="hoursworked" /></td>
+		</tr>
+		<tr>
+			<td>Hourly Rate $:</td>
+			<td><input type="number" id="hour_rate" name="hourlyrate" step=".01"/></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit"></td>
+			<td><input type="button" value="Reset" onClick="Reset()"/></td>
+		</tr>
+		</form>
+	</table>
+	
+</body>
