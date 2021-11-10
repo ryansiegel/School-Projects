@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    Ryan Siegel
+	10/06/2021
+	Purpose: Input info and send to php sheet.
+  -->
+	<title>User Input</title>
+	<!-- javascript to clear-->
+	<script type="text/javascript">
+	function Reset() {
+		document.getElementById("full_name").value="";
+		document.getElementById("tele_number").value="";
+		document.getElementById("email_address").value="";
+		document.getElementById("notes").value="";
+	}
+	</script>
+</head>
+
+<body>
+	<h2>Please enter your info</h2>
+	<table>
+		<!-- perform php post method -->
+		<form action="http://localhost/display_user_info.php" method="POST">
+		<tr>
+			<td>Full Name:</td>
+			<td><input type="text" id="full_name" name="fullname" /></td>
+		</tr>
+		<tr>
+			<td>Telephone Number:</td>
+			<td><input type="text" id="tele_number" name="telenumber" /></td>
+		</tr>
+		<tr>
+			<td>Email Address:</td>
+			<td><input type="text" id="email_address" name="emailaddress" /></td>
+		</tr>
+		<tr>
+			<td>Notes:</td>
+			<td><textarea id="notes" name="notes" rows="6" cols="21"/></textarea></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit"></td>
+			<td><input type="button" value="Reset" onClick="Reset()"/></td>
+		</tr>
+		</form>
+	</table>
+	
+</body>
