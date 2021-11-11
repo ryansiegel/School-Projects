@@ -1,0 +1,29 @@
+Objective 1 : Lets have some fun with ASCII art. Write a program which prints your favorite ASCII art. It’s a very time consuming process. However there are ways around it. For the sake of the assignment,
+
+    Choose your favorite ASCII art from the below website. I chose Star wars. However, feel free to choose your favorite ASCII art (nothing which violates BCTC policy please..be nice ).
+
+https://asciiart.website/index.php?art=movies/star%20wars
+
+    Write a java program to print the ascii art on the console. Use the “MyAsciiArtExample” class in the sample code provided as a template.
+    Send me the screenshot of the ASCII Art and the java source file. Please do not forget to leave credits for the artist and the website in your console output. I have included a sample program “MyAsciiArtExample” in the sample code included. Also here is the video how I utilized the website to print the ASCII art.
+
+https://web.microsoftstream.com/video/8609c10f-9540-43d3-9aa0-a681f7665a11
+Have Fun!!
+
+
+Objective 2 : Let’s review some basic input-output and formatting. Submit the Java source file containing a Java program which
+
+    prompts the user to enter the name of the person.
+    Stores the name of person in a string variable.
+    Prompts the user to enter the age of the person.
+    Stores the age of the person in a variable of type Integer.
+    Retrieve each ascii value of each character of the stored name (which was done in step 2).
+        To get the ascii value of a character value…just cast it to int. for example.
+
+Char c = ‘a’;
+int asciival = (int) c;
+
+    Calculate the sum of all ascii values of each character in the name and store it in a variable of type double.
+    Divide the calculated sum of ascii values by the stored age of the person and store it in a variable of type double.
+    Display the above calculated value as “Astrological Code” with decimal points upto 2 places.
+    Display all the other values stored and calculated above.
