@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    Ryan Siegel
+	11/11/2021
+	Purpose: Allow user to input order.
+  -->
+	<title>The Coffee House - Order Form</title>
+	<style type="text/css">
+
+	label {
+		text-align: left;
+		margin-top: 3px;
+	}
+	
+	.container {
+		display: block;
+		position: relative;
+		padding-left: 23px;
+	}
+	
+	.container input {
+		position: absolute;
+		cursor: pointer;
+		left: 0;
+		top: -2px;
+	}
+  </style>
+</head>
+
+<body>
+	<h1>The Coffee House</h1>
+	<h2>Order Form</h2>
+	<table>
+		<!-- perform php post method -->
+		<form action="http://localhost/display_user_info.php" method="POST">
+		<tr>
+			<td>Coffee:</td>
+			<td>
+				<select id = "coffee" name = "coffee">
+					<optgroup label="Select Coffee:">
+						<option selected hidden>Select Coffee:</option>
+						<option>Boca Villa</option>
+						<option>South Beach Rhythm</option>
+						<option>Pumpkin Paradise</option>
+						<option>Sumatran Sunset</option>
+						<option>Bali Batur</option>
+						<option>Double Dark</option>
+					</optgroup>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Type:</td>
+			<td>
+				<label for = "Regular" class="container">Regular
+				<input type = "radio" name = "type" id = "regular" checked = "checked" value="Regular" />
+				</label>
+				<label for = "Decaffeinated" class="container">Decaffeinated
+				<input type = "radio" name = "type" id = "decaffeinated" value="Decaffeinated" />
+				</label>
+			</td>
+		</tr>
+		<tr>
+			<td>Quantity (in pounds):</td>
+			<td><input type="number" id="quantity" name="quantity" min="1" placeholder="###" style="width: 45px;"/></td>
+		</tr>
+		<tr>
+			<td>Name:</td>
+			<td><input type="text" id="name" name="name"/></td>
+		</tr>
+		<tr>
+			<td>E-mail Address:</td>
+			<td><input type="text" id="email" name="email"/></td>
+		</tr>
+		<tr>
+			<td>Telephone Number:</td>
+			<td><input type="tel" id="phone" name="phone" style="width: 100px;" placeholder="###-###-####"/></td>
+		</tr>
+		<tr>
+			<td>Address:</td>
+			<td><input type="text" id="address" name="address" /></td>
+		</tr>
+		<tr>
+			<td>City:</td>
+			<td><input type="text" id="city" name="city" /></td>
+		</tr>
+		<tr>
+			<td>State:</td>
+			<td><input type="text" id="state" name="state" style="width: 25px;"/></td>
+		</tr>
+		<tr>
+			<td>Zip:</td>
+			<td><input type="number" id="zip" name="zip" max="99999" placeholder="#####" style="width: 65px;"/></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Submit"></td>
+			<td><input type="reset" value="Reset""/></td>
+		</tr>
+		</form>
+	</table>
+	
+</body>
