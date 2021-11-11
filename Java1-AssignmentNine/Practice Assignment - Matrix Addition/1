@@ -1,1 +1,73 @@
+Attached Files:
 
+    File MatrixOperator.java (5.732 KB) 
+
+A matrix (plural matrices) is a rectangular array or table of numbers, arranged in rows and columns
+For example, the dimension of the matrix below is 2 × 2 (read "two by two"), because there are two rows and two columns:
+| 1 1 |
+| 2 2 |
+You are already provided the program “MatrixOperator” to “multiply” two matrices.
+Your assignment is to code the “add” functionality to the existing program using loops and arrays.
+Your first task is to learn briefly what a matrix is.
+https://en.wikipedia.org/wiki/Matrix_(mathematics)
+Just understand it briefly
+
+    What it actually is.
+    What is the structure of a 2x2 matrix
+
+Then understand how matrix multiplication is done. Give the youtube links below a shot.
+https://en.wikipedia.org/wiki/Matrix_multiplication
+https://www.youtube.com/watch?v=Spr2F6jEuaw
+Then analyze the “MatrixOperator” program given to you.
+The two matrixes being multiplied in the program are already set.
+       /*
+         * assigning values for matrixone
+         *    | 1 1 |
+         *    | 2 2 |
+         */
+       
+        /*
+         * assigning values for matrixtwo
+         *    | 4 4 |
+         *    | 5 5 |
+         */
+Then understand what the “matrixoperator” program does.
+
+    There are three class member two-dimensional array fields.
+    matrixone – stores the first matrix data in the two-dimensional array.
+    matrixtwo – stores the second matrix data in the two-dimensional array.
+    matrixresult – stores the result of the matrix data for either the multiplication or addition operation the matrix data stored in matrixone and matrixtwo.
+    There are four primary methods.
+    initialize
+    printAll
+    multiply
+    add
+    main method
+
+The initialize method initializes the matrixone and matrixtwo arrays with the matrix data.
+The printAll method prints the matrix array data of matrixone, matrixtwo and matrixresult in a readable format into the console.
+The multiply method multiplies the matrix data in matrixone and matrixtwo arrays and pushes them into matrixresult.
+The add method is supposed to add the matrix data in matrixone and matrixtwo arrays into the matrixresult. This is the assignment part you need to complete and submit.
+The main method creates the “MatrixOperator” instance and calls the multiply and add methods and prints the results using the printAll method.
+To add the matrix data, the logic to do that can learned from
+https://www.youtube.com/watch?v=ZCmVpGv6_1g
+https://en.wikipedia.org/wiki/Matrix_addition
+Please let your instructor know if you cannot understand and he will work with you.
+The comments in the ‘add’ method already show the result expected.
+/*    watch the below videos to understand the logic behind the matrix
+         *    add logic
+         *    https://www.youtube.com/watch?v=ZCmVpGv6_1g
+         *    https://en.wikipedia.org/wiki/Matrix_addition
+         *    here is a website to validate your results.
+         *    https://matrix.reshish.com/multiplication.php
+         *    expected result for multiplying matrix 1 with matrix 2 would be
+         *    | (1+4) (1+4) |
+         *    | (2+5) (2+5) |
+         *   
+         *    so the result would look like
+         *    |  5  5 |
+         *    |  7  7 |
+         */
+       
+So please make sure you verify your results before you submit your java file.
+When you are ready to submit your assignment, Just submit the updated MatrixOperator.java file
