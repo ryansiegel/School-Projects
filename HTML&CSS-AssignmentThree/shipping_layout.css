@@ -1,0 +1,54 @@
+/* 
+	Author: Ryan Siegel
+	Tutorial 3 - Case Problem 3
+	Date: 02/13/2021
+*/
+
+body {
+	font: 1.1em Arial, Helvetica;
+	background-color: #c19b76;
+}
+
+/*
+	Note for the teacher on h1: The book is a bit confusing on this question. I'm taking that they just want
+	the style as italic and not for me to put the font weight to normal (it says not bold). When I do 
+	add the font weight to normal, it looks nothing like the picture provided and I believe it 
+	removes the Cooper Black font. Being as such, I did not include the font weight. Also wanted to note
+	that the book shows the title not in italic even though it asks for it to be in italic.
+*/
+
+h1 {
+	font: italic 150% Cooper Black;
+}
+
+h2 {
+	color: white;
+	background-color: teal;
+}
+
+h3 {
+	color: white;
+	background-color: teal;
+}
+
+h4 {
+	font-variant: small-caps;
+}
+
+/*
+	Note for the teacher on em: Boldest doesn't seen to be option. Based on how it looks in the book, I
+	decided to go with normal bold instead of bolder. I also take this as being bold compared to the
+	other font weight.
+*/
+
+em {
+	color: green;
+	font-weight: bold;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: teal;
+}
