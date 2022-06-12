@@ -1,0 +1,10 @@
+tee m1u2a2.txt;
+CREATE DATABASE ADDRESSES;
+USE ADDRESSES;
+CREATE TABLE PEOPLE (firstname char(15), middlename char(15), lastname char(10));
+CREATE TABLE BUYERS (firstname char(10), lastname char(20), address char(15));
+CREATE TABLE DROPME (firstname char(10), lastname char(20), address char(15), amtowed float(4,2));
+SHOW TABLES;
+DROP TABLE DROPME;
+SHOW TABLES;
+SHOW DATABASES;

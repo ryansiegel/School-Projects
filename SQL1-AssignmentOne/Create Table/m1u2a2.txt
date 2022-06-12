@@ -1,0 +1,49 @@
+mysql> CREATE DATABASE ADDRESSES;
+Query OK, 1 row affected (0.05 sec)
+
+mysql> USE ADDRESSES;
+Database changed
+mysql> CREATE TABLE PEOPLE (firstname char(15), middlename char(15), lastname char(10));
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> CREATE TABLE BUYERS (firstname char(10), lastname char(20), address char(15));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> CREATE TABLE DROPME (firstname char(10), lastname char(20), address char(15), amtowed float(4,2));
+Query OK, 0 rows affected, 1 warning (0.05 sec)
+
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_addresses |
++---------------------+
+| buyers              |
+| dropme              |
+| people              |
++---------------------+
+3 rows in set (0.00 sec)
+
+mysql> DROP TABLE DROPME;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> SHOW TABLES;
++---------------------+
+| Tables_in_addresses |
++---------------------+
+| buyers              |
+| people              |
++---------------------+
+2 rows in set (0.00 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| addresses          |
+| daveco             |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+5 rows in set (0.00 sec)
+
+mysql> exit
