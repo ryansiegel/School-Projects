@@ -1,0 +1,47 @@
+mysql> CREATE Database DaveCO; CREATE Database Products; CREATE Database Supplies; CREATE Database Vendors; CREATE Database Employees;
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SHOW Databases;
++--------------------+
+| Database           |
++--------------------+
+| daveco             |
+| employees          |
+| information_schema |
+| mysql              |
+| performance_schema |
+| products           |
+| supplies           |
+| vendors            |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> DROP Database Products; DROP Database Supplies; DROP Database Vendors; DROP Database Employees;
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> SHOW Databases;
++--------------------+
+| Database           |
++--------------------+
+| daveco             |
+| information_schema |
+| mysql              |
+| performance_schema |
++--------------------+
+4 rows in set (0.00 sec)
+
+mysql> exit
