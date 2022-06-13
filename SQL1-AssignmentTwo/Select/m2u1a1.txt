@@ -1,0 +1,456 @@
+mysql> tee m2u1a1.txt;
+mysql> SELECT emp_last FROM employees;
++----------+
+| emp_last |
++----------+
+| MorriS   |
+| Smith    |
+| Clark    |
+| Frank    |
+| Stevens  |
+| Kennedy  |
+| Peters   |
+| Chenny   |
+| Clark    |
+| Stevens  |
+| Williams |
+| Hall     |
+| Smith    |
+| Bennet   |
+| Quinn    |
+| Rain     |
+| Holmes   |
+| Tate     |
+| Tate     |
+| Moore    |
+| Cook     |
+| Franks   |
+| Dylan    |
+| Crane    |
+| Green    |
+| Ellis    |
+| Lance    |
+| Jackson  |
+| South    |
+| Prince   |
++----------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT emp_first FROM employees;
++-----------+
+| emp_first |
++-----------+
+| Tony      |
+| Paula     |
+| Jenny     |
+| Dave      |
+| April     |
+| Lawance   |
+| Perry     |
+| Terry     |
+| Hellen    |
+| Jack      |
+| John      |
+| Colleen   |
+| Dorra     |
+| June      |
+| Laura     |
+| Murry     |
+| Cora      |
+| Remus     |
+| Romus     |
+| Misha     |
+| Anne      |
+| Tim       |
+| Jane      |
+| lee       |
+| Lenny     |
+| Steve     |
+| Tim       |
+| Dylan     |
+| Mora      |
+| Paul      |
++-----------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT city FROM employees;
++-------------+
+| city        |
++-------------+
+| Allen       |
+| Allen       |
+| Humming     |
+| Hastings    |
+| Humming     |
+| Humming     |
+| Humming     |
+| Allen       |
+| Corneth     |
+| Westbridge  |
+| Lane        |
+| Lane        |
+| South       |
+| Kidd        |
+| Foto        |
+| Cake        |
+| Allen       |
+| South       |
+| Egg         |
+| Kow         |
+| Tempus      |
+| Gadzooks    |
+| Town        |
+| Henry       |
+| Sunny       |
+| Logan       |
+| Town        |
+| Sol         |
+| Little John |
+| Bruce       |
++-------------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT state FROM employees;
++-------+
+| state |
++-------+
+| NY    |
+| SD    |
+| OH    |
+| TN    |
+| OH    |
+| OH    |
+| OH    |
+| SD    |
+| NY    |
+| TN    |
+| KY    |
+| KY    |
+| KY    |
+| SD    |
+| NY    |
+| KY    |
+| SD    |
+| KY    |
+| FL    |
+| TX    |
+| FL    |
+| KY    |
+| KY    |
+| MI    |
+| KY    |
+| WV    |
+| KY    |
+| KY    |
+| WV    |
+| VA    |
++-------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT emp_first,emp_last FROM employees;
++-----------+----------+
+| emp_first | emp_last |
++-----------+----------+
+| Tony      | MorriS   |
+| Paula     | Smith    |
+| Jenny     | Clark    |
+| Dave      | Frank    |
+| April     | Stevens  |
+| Lawance   | Kennedy  |
+| Perry     | Peters   |
+| Terry     | Chenny   |
+| Hellen    | Clark    |
+| Jack      | Stevens  |
+| John      | Williams |
+| Colleen   | Hall     |
+| Dorra     | Smith    |
+| June      | Bennet   |
+| Laura     | Quinn    |
+| Murry     | Rain     |
+| Cora      | Holmes   |
+| Remus     | Tate     |
+| Romus     | Tate     |
+| Misha     | Moore    |
+| Anne      | Cook     |
+| Tim       | Franks   |
+| Jane      | Dylan    |
+| lee       | Crane    |
+| Lenny     | Green    |
+| Steve     | Ellis    |
+| Tim       | Lance    |
+| Dylan     | Jackson  |
+| Mora      | South    |
+| Paul      | Prince   |
++-----------+----------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT city,state FROM employees;
++-------------+-------+
+| city        | state |
++-------------+-------+
+| Allen       | NY    |
+| Allen       | SD    |
+| Humming     | OH    |
+| Hastings    | TN    |
+| Humming     | OH    |
+| Humming     | OH    |
+| Humming     | OH    |
+| Allen       | SD    |
+| Corneth     | NY    |
+| Westbridge  | TN    |
+| Lane        | KY    |
+| Lane        | KY    |
+| South       | KY    |
+| Kidd        | SD    |
+| Foto        | NY    |
+| Cake        | KY    |
+| Allen       | SD    |
+| South       | KY    |
+| Egg         | FL    |
+| Kow         | TX    |
+| Tempus      | FL    |
+| Gadzooks    | KY    |
+| Town        | KY    |
+| Henry       | MI    |
+| Sunny       | KY    |
+| Logan       | WV    |
+| Town        | KY    |
+| Sol         | KY    |
+| Little John | WV    |
+| Bruce       | VA    |
++-------------+-------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT address,city,state FROM employees;
++-------------------+-------------+-------+
+| address           | city        | state |
++-------------------+-------------+-------+
+| 123 Main          | Allen       | NY    |
+| 23 South Lane     | Allen       | SD    |
+| Route 12          | Humming     | OH    |
+| 12 Mocking Ln     | Hastings    | TN    |
+| 78 West Ave       | Humming     | OH    |
+| 78 West Street    | Humming     | OH    |
+| 83 West Street    | Humming     | OH    |
+| 12 West Road      | Allen       | SD    |
+| 57th Street       | Corneth     | NY    |
+| 83rd Street       | Westbridge  | TN    |
+| 23rd Front Street | Lane        | KY    |
+| 34 West Road      | Lane        | KY    |
+| 102 North Road    | South       | KY    |
+| 12 South Road     | Kidd        | SD    |
+| 12 Main Street    | Foto        | NY    |
+| PO BOX 282        | Cake        | KY    |
+| 17 West Street    | Allen       | SD    |
+| 293 West Ave      | South       | KY    |
+| 34 Chicken Street | Egg         | FL    |
+| 22 LG Drive       | Kow         | TX    |
+| 87 Glory Road     | Tempus      | FL    |
+| 23 Western Lane   | Gadzooks    | KY    |
+| 11 East Street    | Town        | KY    |
+| 1st Lane          | Henry       | MI    |
+| 23 Green Valley   | Sunny       | KY    |
+| Route 12          | Logan       | WV    |
+| Route 234         | Town        | KY    |
+| 12 Glass Road     | Sol         | KY    |
+| Route 23          | Little John | WV    |
+| 39 South Bend     | Bruce       | VA    |
++-------------------+-------------+-------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT * FROM employees;
++---------+----------+-----------+-------------------+-------------+-------+-------+
+| EMP_NUM | EMP_LAST | EMP_FIRST | ADDRESS           | CITY        | STATE | ZIP   |
++---------+----------+-----------+-------------------+-------------+-------+-------+
+|       1 | MorriS   | Tony      | 123 Main          | Allen       | NY    | 23412 |
+|       2 | Smith    | Paula     | 23 South Lane     | Allen       | SD    | 08262 |
+|       3 | Clark    | Jenny     | Route 12          | Humming     | OH    | 23576 |
+|       4 | Frank    | Dave      | 12 Mocking Ln     | Hastings    | TN    | 83723 |
+|       5 | Stevens  | April     | 78 West Ave       | Humming     | OH    | 23577 |
+|       6 | Kennedy  | Lawance   | 78 West Street    | Humming     | OH    | 23578 |
+|       7 | Peters   | Perry     | 83 West Street    | Humming     | OH    | 23578 |
+|       8 | Chenny   | Terry     | 12 West Road      | Allen       | SD    | 08932 |
+|       9 | Clark    | Hellen    | 57th Street       | Corneth     | NY    | 98756 |
+|      10 | Stevens  | Jack      | 83rd Street       | Westbridge  | TN    | 83498 |
+|      11 | Williams | John      | 23rd Front Street | Lane        | KY    | 45234 |
+|      12 | Hall     | Colleen   | 34 West Road      | Lane        | KY    | 45234 |
+|      13 | Smith    | Dorra     | 102 North Road    | South       | KY    | 42142 |
+|      14 | Bennet   | June      | 12 South Road     | Kidd        | SD    | 08332 |
+|      15 | Quinn    | Laura     | 12 Main Street    | Foto        | NY    | 90832 |
+|      16 | Rain     | Murry     | PO BOX 282        | Cake        | KY    | 49872 |
+|      17 | Holmes   | Cora      | 17 West Street    | Allen       | SD    | 19836 |
+|      18 | Tate     | Remus     | 293 West Ave      | South       | KY    | 42142 |
+|      19 | Tate     | Romus     | 34 Chicken Street | Egg         | FL    | 78764 |
+|      20 | Moore    | Misha     | 22 LG Drive       | Kow         | TX    | 67654 |
+|      21 | Cook     | Anne      | 87 Glory Road     | Tempus      | FL    | 79832 |
+|      22 | Franks   | Tim       | 23 Western Lane   | Gadzooks    | KY    | 41832 |
+|      23 | Dylan    | Jane      | 11 East Street    | Town        | KY    | 44323 |
+|      24 | Crane    | lee       | 1st Lane          | Henry       | MI    | 55343 |
+|      25 | Green    | Lenny     | 23 Green Valley   | Sunny       | KY    | 43233 |
+|      26 | Ellis    | Steve     | Route 12          | Logan       | WV    | 62323 |
+|      27 | Lance    | Tim       | Route 234         | Town        | KY    | 44323 |
+|      28 | Jackson  | Dylan     | 12 Glass Road     | Sol         | KY    | 49873 |
+|      29 | South    | Mora      | Route 23          | Little John | WV    | 62345 |
+|      30 | Prince   | Paul      | 39 South Bend     | Bruce       | VA    | 12938 |
++---------+----------+-----------+-------------------+-------------+-------+-------+
+30 rows in set (0.00 sec)
+
+mysql> SELECT * FROM vendors;
++----------+-----------------------+---------+
+| VEN_CODE | VEN_NAME              | CREDIT  |
++----------+-----------------------+---------+
+| 01       | GN FOODS              | 1000.00 |
+| 02       | Easy Out Inc          | 2500.00 |
+| 03       | OK Clothes            |  550.00 |
+| 04       | Spring Cleaners       |  750.00 |
+| 05       | Jason James Foods     | 1500.00 |
+| 06       | EK Support Inc        | 1800.00 |
+| 07       | George Tate Gym       | 1800.00 |
+| 08       | Up All Night Cleaners | 1600.00 |
+| 09       | Junky Kars            |  125.00 |
+| 10       | Rosy Market           | 1200.00 |
++----------+-----------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT ven_name FROM vendors;
++-----------------------+
+| ven_name              |
++-----------------------+
+| GN FOODS              |
+| Easy Out Inc          |
+| OK Clothes            |
+| Spring Cleaners       |
+| Jason James Foods     |
+| EK Support Inc        |
+| George Tate Gym       |
+| Up All Night Cleaners |
+| Junky Kars            |
+| Rosy Market           |
++-----------------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT credit FROM vendors;
++---------+
+| credit  |
++---------+
+| 1000.00 |
+| 2500.00 |
+|  550.00 |
+|  750.00 |
+| 1500.00 |
+| 1800.00 |
+| 1800.00 |
+| 1600.00 |
+|  125.00 |
+| 1200.00 |
++---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT ven_name,credit FROM vendors;
++-----------------------+---------+
+| ven_name              | credit  |
++-----------------------+---------+
+| GN FOODS              | 1000.00 |
+| Easy Out Inc          | 2500.00 |
+| OK Clothes            |  550.00 |
+| Spring Cleaners       |  750.00 |
+| Jason James Foods     | 1500.00 |
+| EK Support Inc        | 1800.00 |
+| George Tate Gym       | 1800.00 |
+| Up All Night Cleaners | 1600.00 |
+| Junky Kars            |  125.00 |
+| Rosy Market           | 1200.00 |
++-----------------------+---------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT * FROM products;
++-------------------+--------+
+| PRODUCT_NAME      | PRICE  |
++-------------------+--------+
+| Hammer            |  12.99 |
+| Stove             | 399.99 |
+| Nails             |   1.99 |
+| Mirror            | 300.99 |
+| Lights            |  10.99 |
+| Shelves           |  59.99 |
+| Gas Range         | 599.99 |
+| Electric Heater   |  29.99 |
+| Repair Manual     |  15.99 |
+| Floor Tiles       |  39.98 |
+| Washer            | 199.95 |
+| Dryer             | 299.95 |
+| Sink              |  87.99 |
+| 2X4               |  10.50 |
+| Sofa              | 234.95 |
+| Couch             | 495.99 |
+| Sofa Cover        |  49.95 |
+| Wood Glue         |   8.75 |
+| Tomato Plans      |   2.99 |
+| Red Roses         |  24.95 |
+| 1 GB RAM          |  59.95 |
+| WD 1TB Hard Drive | 100.99 |
+| CD ROM            |  34.99 |
++-------------------+--------+
+23 rows in set (0.00 sec)
+
+mysql> SELECT product_name FROM products;
++-------------------+
+| product_name      |
++-------------------+
+| Hammer            |
+| Stove             |
+| Nails             |
+| Mirror            |
+| Lights            |
+| Shelves           |
+| Gas Range         |
+| Electric Heater   |
+| Repair Manual     |
+| Floor Tiles       |
+| Washer            |
+| Dryer             |
+| Sink              |
+| 2X4               |
+| Sofa              |
+| Couch             |
+| Sofa Cover        |
+| Wood Glue         |
+| Tomato Plans      |
+| Red Roses         |
+| 1 GB RAM          |
+| WD 1TB Hard Drive |
+| CD ROM            |
++-------------------+
+23 rows in set (0.00 sec)
+
+mysql> SELECT product_name,price FROM products;
++-------------------+--------+
+| product_name      | price  |
++-------------------+--------+
+| Hammer            |  12.99 |
+| Stove             | 399.99 |
+| Nails             |   1.99 |
+| Mirror            | 300.99 |
+| Lights            |  10.99 |
+| Shelves           |  59.99 |
+| Gas Range         | 599.99 |
+| Electric Heater   |  29.99 |
+| Repair Manual     |  15.99 |
+| Floor Tiles       |  39.98 |
+| Washer            | 199.95 |
+| Dryer             | 299.95 |
+| Sink              |  87.99 |
+| 2X4               |  10.50 |
+| Sofa              | 234.95 |
+| Couch             | 495.99 |
+| Sofa Cover        |  49.95 |
+| Wood Glue         |   8.75 |
+| Tomato Plans      |   2.99 |
+| Red Roses         |  24.95 |
+| 1 GB RAM          |  59.95 |
+| WD 1TB Hard Drive | 100.99 |
+| CD ROM            |  34.99 |
++-------------------+--------+
+23 rows in set (0.00 sec)
+
+mysql> exit

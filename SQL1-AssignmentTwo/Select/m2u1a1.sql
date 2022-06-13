@@ -1,0 +1,16 @@
+tee m2u1a1.txt;
+SELECT emp_last FROM employees;
+SELECT emp_first FROM employees;
+SELECT city FROM employees;
+SELECT state FROM employees;
+SELECT emp_first,emp_last FROM employees;
+SELECT city,state FROM employees;
+SELECT address,city,state FROM employees;
+SELECT * FROM employees;
+SELECT * FROM vendors;
+SELECT ven_name FROM vendors;
+SELECT credit FROM vendors;
+SELECT ven_name,credit FROM vendors;
+SELECT * FROM products;
+SELECT product_name FROM products;
+SELECT product_name,price FROM products;
